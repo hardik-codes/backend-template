@@ -32,13 +32,13 @@ Joomla = window.Joomla || {};
             target = event.target;
           }
 
-          target.getAttribute('data-target');
+          const clickTarget = target.getAttribute('data-target');
 
           if (target) {
             const iframe = document.querySelector('#moduleDashboardAddModal iframe');
             const content = iframe.contentDocument || iframe.contentWindow.document;
 
-            content.querySelector(target).click();
+            content.querySelector(clickTarget).click();
           }
         });
       });
