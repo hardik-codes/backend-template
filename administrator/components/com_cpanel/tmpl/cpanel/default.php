@@ -25,12 +25,12 @@ echo HTMLHelper::_(
 	array(
 		'title'       => Text::_('COM_CPANEL_ADD_MODULE_MODAL_TITLE'),
 		'backdrop'    => 'static',
-		'url'         => Route::_('index.php?option=com_cpanel&task=addModule&position=' . $this->escape($this->position)),
+		'url'         => Route::_('index.php?option=com_cpanel&task=addModule&function=jSelectModuleType&position=' . $this->escape($this->position)),
 		'bodyHeight'  => '70',
 		'modalWidth'  => '80',
 		'footer'      => '<a type="button" class="btn" data-dismiss="modal" data-target="#closeBtn" aria-hidden="true">'
 			. Text::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</a>'
-			. '<button type="button" class="btn btn-primary hidden" data-dismiss="modal" data-target="#saveBtn" aria-hidden="true">'
+			. '<button type="button" class="btn btn-primary hidden" data-target="#saveBtn" aria-hidden="true">'
 			. Text::_('JSAVE') . '</button>',
 	)
 );
