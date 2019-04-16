@@ -91,7 +91,10 @@ Text::script('JHIDE');
 			</div>
 		<?php endif; ?>
 		<div class="form-group">
-			<button class="btn btn-primary btn-block btn-lg mt-4" id="btn-login-submit"><?php echo Text::_('JLOGIN'); ?></button>
+			<button class="btn btn-primary btn-block btn-lg mt-4" id="btn-login-submit">
+				<span class="icon-lock icon-white" aria-hidden="true"></span>
+				<?php echo '&#160;'.Text::_('JLOGIN'); ?>
+			</button>
 		</div>
 		<input type="hidden" name="option" value="com_login">
 		<input type="hidden" name="task" value="login">
